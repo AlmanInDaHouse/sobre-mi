@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manuel Grande — Ciberseguridad & IA</title>
+  <meta name="description" content="Portfolio profesional de Manuel Grande: Ciberseguridad, IA defensiva, pentesting avanzado, automatización y protección autónoma.">
+  <meta name="theme-color" content="#0f1226" />
+  <meta property="og:title" content="Manuel Grande — Ciberseguridad & IA" />
+  <meta property="og:description" content="SMR | Estudiante ASIR | IA defensiva | Pentesting | Innovación en seguridad informática" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop" />
+
+  <!-- Fuentes y CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="glow" id="glow"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><span class="logo"></span> Manuel&nbsp;Grande</a>
+      <nav class="menu">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Tecnologías</a>
+        <a href="#contacto">Contacto</a>
+        <a class="cta" href="mailto:manuelgrandeecija1@gmail.com">Contacto directo →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="hero container">
+      <div class="grid">
+        <div>
+          <span class="eyebrow">Ciberseguridad · IA defensiva · Pentesting</span>
+          <h1>Diseño y desarrollo <span class="highlight">sistemas inteligentes</span> de defensa autónoma.</h1>
+          <p class="lead">Soy <strong>Manuel Grande</strong>, técnico en <strong>SMR</strong> y estudiante de <strong>ASIR</strong>. Me especializo en <strong>ciberseguridad avanzada</strong>, automatización defensiva y análisis de vulnerabilidades con IA.</p>
+
+          <div class="badges">
+            <span class="badge">SMR titulado</span>
+            <span class="badge">Estudiando ASIR</span>
+            <span class="badge">Ciberdefensa</span>
+            <span class="badge">Pentesting</span>
+            <span class="badge">IA / ML</span>
+          </div>
+
+          <div class="split">
+            <a class="cta" href="#projects">Ver proyectos</a>
+            <a class="ghost" href="#about">Sobre mí</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section container">
+      <h2>Contacto</h2>
+      <p>📧 <a href="mailto:manuelgrandeecija1@gmail.com">manuelgrandeecija1@gmail.com</a><br>
+         📞 <a href="tel:+34644551293">644 55 12 93</a></p>
+      <p>También disponible en <a href="www.linkedin.com/in/manuel-grande" target="_blank">LinkedIn</a> y <a href="https://github.com" target="_blank">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container split">
+      <span>© <span id="year"></span> Manuel Grande — Ciberseguridad & IA</span>
+      <span>Hecho con ♥ y buen café.</span>
+    </div>
+  </footer>
+
+  <script>
+    const glow = document.getElementById('glow');
+    window.addEventListener('pointermove', e => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
